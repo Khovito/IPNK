@@ -1,0 +1,76 @@
+body {
+	background-color: #003262 !important;
+}
+
+header {
+	background-color: #fff !important;
+}
+
+.enfaseHeader {
+	color: #f77f00 !important;
+}
+
+.home-nav a {
+	margin-right: 14px;
+}
+
+#titulo-pequeno, #titulo-grande {
+	color: #fff;
+}
+
+.main-red-button a:hover{
+	background-color: #f77f00 !important;
+}
+
+.navegacao-botoes {
+	margin-left: 100px;
+}
+
+.botao-circular {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer !important;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+/* Botão activo (com fundo colorido) */
+.botao-circular.activo {
+  background-color: #f77f00;
+  border: none;
+}
+
+/* Botão inactivo (sem fundo, só borda) */
+.botao-circular:not(.activo) {
+  background-color: transparent;
+  border: 1px solid #f77f00;
+}
+
+.icon-width {
+	width: 70px;
+	height: 80px;
+}
+
+.textoPort {
+	color: #fff !important;
+}
+
+.textoNot {
+	color: #000 !important;
+}
+
+.fa-calendar, .fa-map-marker, .fa-clock-o {
+	color: #003262 !important;
+}
+
+.agenda {
+	color: #fff !important;
+}
+
+.inner-content {
+	background-color: #fff !important;
+}
+
+.info {
+	margin-top: 110px;
+}

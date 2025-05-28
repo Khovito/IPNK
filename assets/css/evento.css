@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .time{
+    text-align: center;
+    padding: 35px;
+  }
+  .time i{
+    color: #ffc0cb;
+    padding: 5px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff8e1/*f9f9f9*/;
+  }
+  
+  /*header {
+    background: url('../images/IMG_6949.JPG') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }*/
+
+
+  header {
+    background: url('../images/IMG_6949.JPG') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  /* Estilo do header continua */
+header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Botões nas laterais fixos verticalmente */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 90%;
+}
+
+/* Esquerda */
+#prev {
+  left: 20px;
+}
+
+/* Direita */
+#next {
+  right: 20px;
+}
+
+  
+  
+
+  
+  
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    z-index: 2;
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    
+  }
+
+  .hero-content img{
+   width: 15%;
+   aspect-ratio: 10/9;
+   object-fit: cover;
+  mix-blend-mode: darken;
+  border-radius: 90%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content .eve {
+    background: #ffc0cb;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-content .eve:hover {
+    background: #003366;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h2.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #222;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .event-content {
+    padding: 20px;
+  }
+  
+  .event-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-content p {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  footer {
+    background: #003366;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+  }
+  

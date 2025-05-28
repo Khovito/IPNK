@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPNK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/noticias.css">
+  <link rel="shortcut icon" href="assets/images/IPNK.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+</head>
+<body>
+  
+  <!--<header>
+    <div class="hero-content">
+      <a href="index.html"><img src="assets/images/IPNK.jpg" alt=""></a>
+      <h1>Viva Experiências Incríveis</h1>
+      <p>Descubra os melhores eventos culturais, musicais, gastronômicos e mais!</p>
+      <a href="#container-cards" class="eve">Ver Notícias</a>
+    </div>
+  </header>-->
+
+  <header id="hero">
+    <div class="hero-content">
+      <a href="index.html"><img src="assets/images/IPNK.jpg" alt=""></a>
+      <h1 id="hero-title">Viva Experiências Incríveis</h1>
+      <p id="hero-desc">Descubra os melhores eventos culturais, musicais, gastronômicos e mais!</p>
+      <a href="#container-cards" class="eve">Ver Notícias</a>
+    </div>
+
+    <!-- Botões de navegação -->
+    <button id="prev" class="nav-btn">⟨</button>
+    <button id="next" class="nav-btn">⟩</button>
+  </header>
+  
+    <h2 class="section-title">Notícias em Destaque</h2>
+    
+    <div class="container-cards" id="container-cards">
+      <div class="card" style="background-image: url('assets/images/background-sobre1.jpg')">
+        <div class="overlay">
+          <div class="categoria">Tecnologia</div>
+          <div class="titulo">Descoberta revoluciona energia solar</div>
+          <div class="data">14 de abril de 2025</div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('assets/images/background-servicos.jpg')">
+        <div class="overlay">
+          <div class="categoria">Cultura</div>
+          <div class="titulo">Festival de música agita o centro</div>
+          <div class="data">13 de abril de 2025</div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('assets/images/background-home.jpg')">
+        <div class="overlay">
+          <div class="categoria">Mercado</div>
+          <div class="titulo">Como a IA muda o mercado de trabalho</div>
+          <div class="data">12 de abril de 2025</div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('assets/images/img-2566821148.jpeg')">
+        <div class="overlay">
+          <div class="categoria">Cultura</div>
+          <div class="titulo">Como a IA muda o mercado de trabalho</div>
+          <div class="data">12 de abril de 2025</div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('assets/images/banner-right-image.png')">
+        <div class="overlay">
+          <div class="categoria">Mercado</div>
+          <div class="titulo">Como a IA muda o mercado de trabalho</div>
+          <div class="data">12 de abril de 2025</div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url('assets/images/img-2027901318.jpeg')">
+        <div class="overlay">
+          <div class="categoria">Mercado</div>
+          <div class="titulo">Como a IA muda o mercado de trabalho</div>
+          <div class="data">12 de abril de 2025</div>
+        </div>
+      </div>
+      
+    </div>
+
+    <footer>
+      <p>© Copyright 2025 IPNK, todos os direitos reservado.</p>
+    </footer>
+
+    <script>
+      const slides = [
+  {
+    image: 'assets/images/IMG_6952.JPG',
+    title: 'Viva Experiências Incríveis',
+    desc: 'Descubra os melhores eventos culturais, musicais, gastronômicos e mais!'
+  },
+  {
+    image: 'assets/images/IMG_6950.JPG',
+    title: 'Explore Novas Culturas',
+    desc: 'Viaje pelo mundo sem sair do lugar com nossos eventos temáticos.'
+  },
+  {
+    image: 'assets/images/IMG_6951.JPG',
+    title: 'Encantam',
+    desc: 'Conheça a diversidade gastronômica em um só lugar.'
+  }
+];
+
+let current = 0;
+const header = document.getElementById('hero');
+const title = document.getElementById('hero-title');
+const desc = document.getElementById('hero-desc');
+
+function showSlide(index) {
+  const slide = slides[index];
+  header.style.backgroundImage = `url('${slide.image}')`;
+  title.textContent = slide.title;
+  desc.textContent = slide.desc;
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
+
+document.getElementById('next').addEventListener('click', nextSlide);
+document.getElementById('prev').addEventListener('click', prevSlide);
+
+setInterval(nextSlide, 5000); // auto slide a cada 5 segundos
+showSlide(current); // inicia com o primeiro slide
+
+    </script>
+</body>
+</html>
